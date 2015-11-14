@@ -23,7 +23,8 @@ to match your needs.
 ```bash
 # .bashrc
 jump_host() {
-  ruby -I$HOME/Projekte/ruby/jump_host -rjump_host <<-EOC
+  # you might need to adjust the path to your setup
+  ruby -I$HOME/jump_host -rjump_host <<-EOC
   
   # format string for the hostname, %s is replaced with the region
   JumpHost::Droplet.name_format = "jump-%s.your-do.host"
